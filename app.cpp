@@ -34,5 +34,6 @@ int main(){
     numbers = {1, 2, 3, 4, 5};
     cout << "Total: " << add(numbers) << endl;
     cout << "Product: " << multiply(numbers);
+    cout << "Maximum: " << maximum(numbers);
     return 0;
 }
