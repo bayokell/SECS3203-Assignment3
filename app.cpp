@@ -11,9 +11,18 @@ int add(vector<int> a){
     return total;
 }
 
+int multiply(vector<int> a){
+    int product = 1;
+    for(vector<int>::iterator iter = a.begin(); iter != a.end(); iter++){
+        product = product * *iter;
+    }
+    return product;
+}
+
 int main(){
     vector<int> numbers;
     numbers = {1, 2, 3, 4, 5};
     cout << "Total: " << add(numbers) << endl;
+    cout << "Product: " << multiply(numbers);
     return 0;
 }
