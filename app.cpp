@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int add(vector<int> a){
+int add(vector<int> a){         // method to add a list of numbers
     int total = 0;
     for(vector<int>::iterator iter = a.begin(); iter != a.end(); iter++){
         total += *iter;
