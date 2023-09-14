@@ -19,6 +19,16 @@ int multiply(vector<int> a){
     return product;
 }
 
+int maximum(vector<int> a){
+    int max = 0;
+    for(vector<int>::iterator iter = a.begin(); iter != a.end(); iter++){
+        if(max < *iter){
+            max = *iter;
+        }
+    }
+    return max;
+}
+
 int main(){
     vector<int> numbers;
     numbers = {1, 2, 3, 4, 5};
